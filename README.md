@@ -96,7 +96,7 @@
 ### 3) 교차검증 후 최적 모델 선택
 #### (1) 교차검증 절차 및 기준
 * 교차검증은 폴더 수를 2~10으로 하여, 총 9번에 걸쳐 진행
-* 훈련데이터(train data)와 검증(validation data)데이터의 rmse의 평균값 (mean_of_rmse_train)은 차이가 0.5 이하는 무차별하다고 간주  
+* 훈련데이터(train data)와 검증(validation data)데이터의 rmse의 평균값 (mean_of_rmse_train)은 차이가 0.5 이하인 경우, 무차별하다고 간주  
   (사유: Y라벨값 0.5는 한화 약 75만에 해당하며, 중고차 가격에서 이 정도 크기의 차이는 허용가능하다고 판단)
 * 훈련데이터(train data)와 검증(validation data)데이터의 rmse의 표준편차값 (std_of_rmse_train)은 작을수록 우수하다고 간주  
   (사유: 훈련 시 과적합을 방지하기 위해 편차는 작을수록 좋다고 판단)
