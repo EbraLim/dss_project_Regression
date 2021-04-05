@@ -81,7 +81,7 @@
 \
 \
   <img width="1125" alt="스크린샷 2021-03-28 오후 4 59 17" src="https://user-images.githubusercontent.com/78460759/112745961-f0caba80-8fe6-11eb-86ae-1f9bddae7e53.png">
-\
+
   * X_train과 Object, 총 두 개의 인자를 input으로 받음  
   * X_train으로 파이프라인을 fit시킨 후, 해당 파이프라인에 Object를 통과시켜 변환된 결과를 output으로 반환
 
@@ -89,7 +89,7 @@
 \
 \
   <img width="1705" alt="스크린샷 2021-03-28 오후 5 08 36" src="https://user-images.githubusercontent.com/78460759/112746174-3f2c8900-8fe8-11eb-9aa0-fd5ed22bf814.png">
-\
+
   * 훈련 데이터로 교차검증한 후, 동일한 모델에 테스트 데이터를 적용
   * fold 수에 따른 교차검증 결과, 그리고 모델별 훈련 데이터와 테스트 데이터의 rmse값 등을 output으로 반환
 
@@ -101,7 +101,7 @@
 * 훈련데이터(train data)와 검증(validation data)데이터의 rmse의 표준편차값 (std_of_rmse_train)은 작을수록 우수하다고 간주  
   (사유: 훈련 시 과적합을 방지하기 위해 편차는 작을수록 좋다고 판단)
 * 총 9번의 시행결과 중 최다 득표한 모델을 최적 모델로 간주  
-\
+
 #### (2) 교차검증 결과
 ![image](https://user-images.githubusercontent.com/78460759/112746264-a8ac9780-8fe8-11eb-9692-e66f4622e937.png)
 * 스케일러별 교차검증결과는 아래와 같음
